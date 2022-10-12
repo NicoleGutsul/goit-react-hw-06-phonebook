@@ -24,7 +24,7 @@ const Contacts = () => {
         <>
            <h1>Contacts</h1>
            <ul>
-               {filteredContacts.localeCompare(contact => {
+               {filteredContacts.map(contact => {
                 return (
                     <li key={contact.id}>
                         {contact.name}: {contact.number}
