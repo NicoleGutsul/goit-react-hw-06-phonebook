@@ -1,5 +1,4 @@
 import React from "react";
-import Contacts from "../Contacts/Contacts";
 import { useDispatch, useSelector } from "react-redux";
 import { addContact } from "redux/rootSlice";
 import { getContacts } from "redux/selectors";
@@ -46,7 +45,6 @@ const Form = () => {
           />
           <button type="submit">Add contact</button>
         </form>
-        <Contacts />
       </>
     );
   };
